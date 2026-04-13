@@ -1,0 +1,123 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--navbar-height);
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(108, 99, 255, 0.12), transparent);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-5);
+}
+
+.hero__greeting {
+  font-family: var(--font-mono);
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+}
+
+.hero__name {
+  font-size: clamp(var(--text-4xl), 8vw, 5rem);
+  font-weight: var(--font-bold);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.hero__title {
+  font-size: clamp(var(--text-xl), 3vw, var(--text-3xl));
+  font-weight: var(--font-medium);
+  color: var(--color-text-muted);
+}
+
+.hero__description {
+  max-width: 540px;
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* Call-to-action buttons */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-full);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+    background-color var(--transition-fast), color var(--transition-fast),
+    border-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.btn--primary:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn--outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
+/* Animated scroll indicator */
+
+.hero__scroll-hint {
+  margin-top: var(--space-16);
+  width: 24px;
+  height: 40px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.hero__scroll-hint span {
+  display: block;
+  width: 4px;
+  height: 8px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+  animation: scroll-bounce 1.6s ease-in-out infinite;
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.3;
+  }
+}
