@@ -3,16 +3,16 @@
 
 :root {
   /* Colour palette */
-  --color-primary: #6c63ff;
-  --color-primary-dark: #574fd6;
-  --color-secondary: #ff6584;
-  --color-background: #0f0f1a;
-  --color-surface: #1a1a2e;
-  --color-surface-alt: #16213e;
-  --color-border: #2a2a4a;
+  --color-primary: #e61616;
+  --color-primary-dark: #ff3b3b;
+  --color-secondary: #ff6868;
+  --color-background: #1a0f0f;
+  --color-surface: #2e1a1a;
+  --color-surface-alt: #3e1616;
+  --color-border: #4a2a2a;
   --color-text: #e2e2f0;
-  --color-text-muted: #8888aa;
-  --color-text-inverted: #0f0f1a;
+  --color-text-muted: #aa8888;
+  --color-text-inverted: #1a0f0f;
 
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -58,7 +58,7 @@
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 24px rgba(108, 99, 255, 0.35);
+  --shadow-glow: 0 0 24px rgba(255, 99, 99, 0.35);
 
   /* Transitions */
   --transition-fast: 150ms ease;

@@ -92,7 +92,7 @@
 .form-input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+  box-shadow: 0 0 0 3px rgba(255, 99, 99, 0.2);
 }
 
 .form-textarea {

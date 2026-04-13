@@ -6,7 +6,7 @@ import './Projects.css';
  * Projects section that renders a responsive grid of project cards
  * sourced from the projects data file.
  */
-function Projects() {
+const Projects = () => {
   return (
     <section id="projects" className="section">
       <div className="container">

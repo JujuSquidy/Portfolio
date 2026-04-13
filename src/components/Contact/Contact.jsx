@@ -8,7 +8,7 @@ const INITIAL_FORM = { name: '', email: '', message: '' };
  * Submission is handled client-side only; the action URL should be
  * replaced with a real back-end endpoint or a service such as Formspree.
  */
-function Contact() {
+const Contact = () => {
   const [form, setForm] = useState(INITIAL_FORM);
   const [status, setStatus] = useState('idle'); // idle | loading | success | error
 
@@ -26,7 +26,7 @@ function Contact() {
     await new Promise((resolve) => setTimeout(resolve, 800));
 
     // Optimistic success — replace this block with a real fetch call.
-    setStatus('success');
+    setStatus('error');
     setForm(INITIAL_FORM);
   };
 
@@ -50,30 +50,30 @@ function Contact() {
             <ul className="contact__channels">
               <li>
                 <span className="contact__channel-label">Email</span>
-                <a href="mailto:hello@example.com" className="contact__channel-link">
-                  hello@example.com
+                <a href="mailto:machet.julian@gmail.com" className="contact__channel-link">
+                  machet.julian@gmail.com
                 </a>
               </li>
               <li>
                 <span className="contact__channel-label">GitHub</span>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/JujuSquidy"
                   target="_blank"
                   rel="noreferrer"
                   className="contact__channel-link"
                 >
-                  github.com/yourusername
+                  github.com/JujuSquidy
                 </a>
               </li>
               <li>
                 <span className="contact__channel-label">LinkedIn</span>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/julian-machet-04765b38a/"
                   target="_blank"
                   rel="noreferrer"
                   className="contact__channel-link"
                 >
-                  linkedin.com/in/yourusername
+                  linkedin.com/in/julian-machet-04765b38a/
                 </a>
               </li>
             </ul>

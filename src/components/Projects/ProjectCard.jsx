@@ -13,7 +13,7 @@ import './ProjectCard.css';
  * @param {string|null} project.repoUrl  - Link to the source repository, or null.
  * @param {boolean}     project.featured - Whether to apply a featured highlight.
  */
-function ProjectCard({ project }) {
+const ProjectCard = ({ project }) => {
   const { title, description, tags, liveUrl, repoUrl, featured } = project;
 
   return (

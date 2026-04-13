@@ -4,13 +4,13 @@ import './Hero.css';
  * Full-viewport introductory section that greets visitors with the owner's
  * name, title, and two call-to-action buttons.
  */
-function Hero() {
+const Hero = () => {
   return (
     <section id="home" className="hero section">
       <div className="container hero__content">
         <p className="hero__greeting">Hello, I am</p>
         <h1 className="hero__name">
-          Your <span className="highlight">Name</span>
+          Julian <span className="highlight">Machet</span>
         </h1>
         <h2 className="hero__title">Full-Stack Developer</h2>
         <p className="hero__description">
@@ -18,6 +18,9 @@ function Hero() {
           experiences and maintainable code.
         </p>
         <div className="hero__actions">
+          <a href="#about" className="btn btn--outline">
+            About Me
+          </a>
           <a href="#projects" className="btn btn--primary">
             View Projects
           </a>

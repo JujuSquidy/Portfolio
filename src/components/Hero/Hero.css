@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   padding-top: var(--navbar-height);
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(108, 99, 255, 0.12), transparent);
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255, 99, 99, 0.12), transparent);
 }
 
 .hero__content {

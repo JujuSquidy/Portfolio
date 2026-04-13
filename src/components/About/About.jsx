@@ -5,7 +5,7 @@ import './About.css';
  * The avatar placeholder and text blocks are designed to be easily
  * replaced with real content.
  */
-function About() {
+const About = () => {
   return (
     <section id="about" className="section">
       <div className="container">
@@ -17,7 +17,7 @@ function About() {
         <div className="about__grid">
           <div className="about__avatar-wrapper">
             <div className="about__avatar" aria-hidden="true">
-              <span>YN</span>
+              <span>JM</span>
             </div>
           </div>
 
@@ -41,11 +41,11 @@ function About() {
             <div className="about__details">
               <div className="about__detail-item">
                 <span className="about__detail-label">Location</span>
-                <span>Your City, Country</span>
+                <span>La Rochelle, France</span>
               </div>
               <div className="about__detail-item">
                 <span className="about__detail-label">Education</span>
-                <span>BSc Computer Science</span>
+                <span>Computer Science Bachelor of Technology, IUT de La Rochelle</span>
               </div>
               <div className="about__detail-item">
                 <span className="about__detail-label">Availability</span>
@@ -54,7 +54,7 @@ function About() {
             </div>
 
             <a
-              href="/cv.pdf"
+              href="/CV_Julian_Machet.pdf"
               className="btn btn--primary about__resume-btn"
               download
               aria-label="Download resume PDF"

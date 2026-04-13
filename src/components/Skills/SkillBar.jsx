@@ -6,7 +6,7 @@ import './SkillBar.css';
  * @param {string} name  - Display name of the skill.
  * @param {number} level - Proficiency percentage (0–100).
  */
-function SkillBar({ name, level }) {
+const SkillBar = ({ name, level }) => {
   return (
     <div className="skill-bar">
       <div className="skill-bar__header">

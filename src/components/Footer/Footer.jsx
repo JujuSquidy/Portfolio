@@ -1,9 +1,8 @@
 import './Footer.css';
 
 const SOCIAL_LINKS = [
-  { label: 'GitHub', href: 'https://github.com/yourusername' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/yourusername' },
-  { label: 'Twitter', href: 'https://twitter.com/yourusername' },
+  { label: 'GitHub', href: 'https://github.com/JujuSquidy' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/julian-machet-04765b38a/' }
 ];
 
 const NAV_LINKS = [
@@ -17,7 +16,7 @@ const NAV_LINKS = [
 /**
  * Site footer with navigation links, social links, and a copyright notice.
  */
-function Footer() {
+const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
@@ -57,7 +56,7 @@ function Footer() {
 
         <div className="footer__bottom">
           <p>
-            &copy; {year} Your Name. Built with React and Vite.
+            &copy; {year} Julian Machet. Built with React and Vite.
           </p>
         </div>
       </div>

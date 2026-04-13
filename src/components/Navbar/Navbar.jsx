@@ -16,7 +16,7 @@ const SECTION_IDS = ['home', 'about', 'skills', 'projects', 'contact'];
  * Fixed top navigation bar with scroll-aware active link highlighting
  * and a responsive hamburger menu for narrow screens.
  */
-function Navbar() {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const activeId = useActiveSection(SECTION_IDS);

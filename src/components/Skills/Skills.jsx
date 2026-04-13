@@ -6,7 +6,7 @@ import './Skills.css';
  * Skills section that displays grouped proficiency bars for each category
  * defined in the skills data file.
  */
-function Skills() {
+const Skills = () => {
   return (
     <section id="skills" className="section skills">
       <div className="container">
