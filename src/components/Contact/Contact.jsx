@@ -79,7 +79,15 @@ const Contact = () => {
             </ul>
           </div>
 
-          <form className="contact__form" onSubmit={handleSubmit} noValidate>
+          <form className="contact__form" onSubmit={handleSubmit}>
+            
+           <div>
+              <p className="contact__disclaimer">
+                This form is currently a work in progress and does not send real messages.
+                Please use the contact information provided to reach out directly.
+              </p>
+            </div>
+
             <div className="form-group">
               <label htmlFor="contact-name" className="form-label">
                 Name
@@ -145,7 +153,7 @@ const Contact = () => {
             )}
             {status === 'error' && (
               <p className="contact__feedback contact__feedback--error" role="alert">
-                Something went wrong. Please try again or send an email directly.
+                This is a work in progress. Please try again or send an email directly.
               </p>
             )}
           </form>

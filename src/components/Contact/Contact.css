@@ -100,6 +100,13 @@
   resize: vertical;
 }
 
+.contact__disclaimer {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+}
+
 .contact__submit {
   align-self: flex-start;
 }

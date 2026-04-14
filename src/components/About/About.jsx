@@ -23,8 +23,8 @@ const About = () => {
 
           <div className="about__text">
             <p>
-              A french software developer with a passion for building things that live
-              on the internet. From designing user interfaces to architecting
+              A french software developer with a passion for building things 
+              and helping others. From designing user interfaces to architecting
               back-end services, the goal is always the same: write code that is
               easy to read and easy to maintain.
             </p>
