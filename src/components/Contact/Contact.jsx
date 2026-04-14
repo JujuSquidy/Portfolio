@@ -25,7 +25,7 @@ const Contact = () => {
     // Using a short delay here to simulate async submission.
     await new Promise((resolve) => setTimeout(resolve, 800));
 
-    // Optimistic success — replace this block with a real fetch call.
+    // Error for now since there is no real endpoint, but this is where you would handle the response.
     setStatus('error');
     setForm(INITIAL_FORM);
   };
@@ -80,7 +80,7 @@ const Contact = () => {
           </div>
 
           <form className="contact__form" onSubmit={handleSubmit}>
-            
+
            <div>
               <p className="contact__disclaimer">
                 This form is currently a work in progress and does not send real messages.

@@ -11,15 +11,15 @@ const skills = [
       { name: 'JavaScript', level: 90 },
       { name: 'TypeScript', level: 70 },
       { name: 'HTML & CSS', level: 80 },
-      { name: 'Vite', level: 85 },
+      { name: 'Vite', level: 80 },
     ],
   },
   {
     category: 'Backend',
     items: [
       { name: 'Node.js', level: 80 },
-      { name: 'Express', level: 80 },
-      { name: 'Python', level: 70 },
+      { name: 'C++', level: 80 },
+      { name: 'Python', level: 75 },
       { name: 'REST APIs', level: 85 },
       { name: 'Symfony (PHP)', level: 90 },
     ],
@@ -27,11 +27,11 @@ const skills = [
   {
     category: 'Tools & Ops',
     items: [
-      { name: 'Git & GitHub', level: 90 },
+      { name: 'Git', level: 90 },
       { name: 'Docker', level: 90 },
-      { name: 'Linux / CLI', level: 85 },
-      { name: 'PostgreSQL', level: 70 },
-      { name: 'MongoDB', level: 70 },
+      { name: 'Linux', level: 85 },
+      { name: 'PostgreSQL', level: 60 },
+      { name: 'MongoDB', level: 60 },
     ],
   },
 ];
