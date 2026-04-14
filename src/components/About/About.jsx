@@ -23,15 +23,15 @@ const About = () => {
 
           <div className="about__text">
             <p>
-              A software developer with a passion for building things that live
+              A french software developer with a passion for building things that live
               on the internet. From designing user interfaces to architecting
               back-end services, the goal is always the same: write code that is
-              easy to read, easy to maintain, and enjoyable to use.
+              easy to read and easy to maintain.
             </p>
             <p>
               When not writing code, time is spent exploring new technologies,
-              contributing to open source, and tinkering with side projects that
-              may or may not ever see the light of day.
+              playing video games, learning new things, and tinkering with side
+              projects that may or may not ever see the light of day.
             </p>
             <p>
               This portfolio is a living document — projects, skills, and

@@ -6,7 +6,7 @@
 const projects = [
   {
     id: 1,
-    title: 'Project Alpha',
+    title: 'Monitoring Dashboard',
     description:
       'A full-stack web application built with React and Node.js that lets users manage tasks with real-time collaboration features.',
     tags: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
