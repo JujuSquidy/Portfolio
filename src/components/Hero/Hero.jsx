@@ -15,7 +15,7 @@ const Hero = () => {
         <h2 className="hero__title">Full-Stack Developer</h2>
         <p className="hero__description">
           I craft clean, performant web applications with a focus on great user
-          experiences and maintainable code.
+          experiences, privacy, and maintainable code.
         </p>
         <div className="hero__actions">
           <a href="#about" className="btn btn--outline">

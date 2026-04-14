@@ -1,6 +1,6 @@
 # Portfolio
 
-A personal portfolio website built with **React** and **Vite**. The project is structured so that every visual element is an isolated component with its own styles, making the codebase easy to navigate, extend, and maintain.
+A personal portfolio website built with **React** and **Vite**. The project is structured so that every visual element is an isolated component with its own styles, making the codebase easy to navigate, extend, and maintain. Not fully responsive for phone use, it can be kind of buggy for phone usage.
 
 ---
 
@@ -51,9 +51,8 @@ npm run dev
 ```
 Portfolio/
 ├── public/
-│   └── favicon.svg
+│   └── favicon.png
 ├── src/
-│   ├── assets/
 │   ├── components/
 │   │   ├── Navbar/
 │   │   │   ├── Navbar.jsx
@@ -118,7 +117,8 @@ Static files served directly at the root URL without transformation by Vite.
 
 | File | Purpose |
 |------|---------|
-| `public/favicon.svg` | SVG favicon shown in browser tabs. Replace with a personal logo. |
+| `public/favicon.png` | PNG favicon shown in browser tabs. Replace with a personal logo. |
+| `public/CV_Julian_Machet.pdf` | My personal resume downloadable in case the user needs it. | 
 
 ---
 
@@ -238,16 +238,3 @@ Root component that imports the global stylesheet and composes all sections in o
 ### `src/main.jsx`
 
 React DOM entry point. Creates the root and renders `<App />` inside `<StrictMode>`.
-
----
-
-## Customisation Guide
-
-1. **Personal information** — Update `src/components/Hero/Hero.jsx`, `src/components/About/About.jsx`, and `src/components/Footer/Footer.jsx` with a real name, title, bio, location, and social links.
-2. **Projects** — Edit `src/data/projects.js`. Each entry is one card in the grid.
-3. **Skills** — Edit `src/data/skills.js`. Adjust categories, skill names, and percentage levels.
-4. **Design tokens** — All colours, fonts, and spacing live in `src/styles/variables.css`. Change the `--color-primary` value to rebrand the entire site in one edit.
-5. **Avatar** — Replace the initials `<div>` in `About.jsx` with an `<img>` tag pointing to a real photo.
-6. **Resume** — Place a `cv.pdf` file inside the `public/` directory so the download link in `About.jsx` resolves correctly.
-7. **Contact form** — Replace the `setTimeout` in `Contact.jsx` with a `fetch` POST to a real endpoint.
-8. **Favicon** — Replace `public/favicon.svg` with a personal logo.

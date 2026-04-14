@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer';
  * Root application component.
  * Assembles all page sections in order and renders the persistent Navbar and Footer.
  */
-function App() {
+const App = () => {
   return (
     <>
       <Navbar />
