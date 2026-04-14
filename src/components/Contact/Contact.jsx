@@ -80,8 +80,7 @@ const Contact = () => {
           </div>
 
           <form className="contact__form" onSubmit={handleSubmit}>
-
-           <div>
+            <div>
               <p className="contact__disclaimer">
                 This form is currently a work in progress and does not send real messages.
                 Please use the contact information provided to reach out directly.

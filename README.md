@@ -117,7 +117,7 @@ Static files served directly at the root URL without transformation by Vite.
 
 | File | Purpose |
 |------|---------|
-| `public/favicon.png` | SVG favicon shown in browser tabs. Replace with a personal logo. |
+| `public/favicon.png` | PNG favicon shown in browser tabs. Replace with a personal logo. |
 | `public/CV_Julian_Machet.pdf` | My personal resume downloadable in case the user needs it. | 
 
 ---

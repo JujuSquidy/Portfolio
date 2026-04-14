@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: 'Monitoring Dashboard',
     description:
-      'A web application made with symfony that gather infos from an API that receive datas about rooms (temperature, humidity, air quality) and displays them in a dashboard with charts separated by rooms for eco-friendly monitoring of the building. Datas are gathered by some ESP32 microcontroller with connected sensors and sent to the API with simple curl requests.',
+      'A web application made with Symfony that gathers information from an API that receive data about rooms (temperature, humidity, air quality) and displays them in a dashboard with charts separated by rooms for eco-friendly monitoring of the building. data are gathered by some ESP32 microcontroller with connected sensors and sent to the API with simple curl requests.',
     tags: ['Symfony', 'C++', 'JavaScript', 'Twig', 'Teamwork', 'Testing'],
     liveUrl: null,
     repoUrl: '#',
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     title: 'Mobile web app',
     description:
-      'A mobile web application made for users of the previous project were they can create an account, see rooms latest datas, get notified if there is a problem with the room and be informed on what to do to fix the problem (open the window, turn off the heater, etc). A weekly leaderboard of top performers was also implemented to improve engagement of users. Made with React, a symfony API with API Platform and GitLab CI/CD with a Linter, php-cs-fixer, SonarQube, and php/js unit tests pipelines.',
+      'A mobile web application made for users of the previous project where they can create an account, see rooms latest data, get notified if there is a problem with the room and be informed on what to do to fix the problem (open the window, turn off the heater, etc). A weekly leaderboard of top performers was also implemented to improve engagement of users. Made with React, a symfony API with API Platform and GitLab CI/CD with a Linter, php-cs-fixer, SonarQube, and php/js unit tests pipelines.',
     tags: ['React', 'CI/CD', 'Git', 'Docker', 'SonarQube', 'C++', 'API REST', 'Symfony', 'Testing', 'Teamwork', 'Playwright'],
     liveUrl: null,
     repoUrl: '#',
