@@ -4,6 +4,11 @@ A personal portfolio website built with **React** and **Vite**. The project is s
 
 ---
 
+## Link to the website
+
+Might change in the future
+[here](https://portfolio-julian-machet.netlify.app/)
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
