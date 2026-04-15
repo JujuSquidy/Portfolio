@@ -86,7 +86,7 @@ const resources = {
       projects: {
         titleBefore: 'Mes',
         titleHighlight: 'projets',
-        subtitle: 'Une selection de mes travaux professionnels et personnels',
+        subtitle: 'Une sélection de mes travaux professionnels et personnels',
         filterAria: 'Filtrer par catégorie de projet',
         filters: {
           schoolProfessional: 'Scolaires & Professionnels',
