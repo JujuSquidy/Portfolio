@@ -170,7 +170,7 @@ const resources = {
       contact: {
         titleBefore: 'Me',
         titleHighlight: 'contacter',
-        subtitle: 'Une question, une idee de projet, ou juste envie de dire bonjour ?',
+        subtitle: 'Une question, une idée de projet, ou juste envie de dire bonjour ?',
         workTogether: 'Travaillons ensemble',
         workTogetherText:
           'Que ce soit pour une mission freelance, un poste a temps plein ou un projet collaboratif, ma boite mail est toujours ouverte.',
