@@ -1,31 +1,31 @@
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 
 /**
  * Full-viewport introductory section that greets visitors with the owner's
- * name, title, and two call-to-action buttons.
+ * name, title, and three call-to-action buttons.
  */
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="hero section">
       <div className="container hero__content">
-        <p className="hero__greeting">Hello, I am</p>
+        <p className="hero__greeting">{t('hero.greeting')}</p>
         <h1 className="hero__name">
           Julian <span className="highlight">Machet</span>
         </h1>
-        <h2 className="hero__title">Full-Stack Developer</h2>
-        <p className="hero__description">
-          I craft clean, performant web applications with a focus on great user
-          experiences, privacy, and maintainable code.
-        </p>
+        <h2 className="hero__title">{t('hero.title')}</h2>
+        <p className="hero__description">{t('hero.description')}</p>
         <div className="hero__actions">
           <a href="#about" className="btn btn--outline">
-            About Me
+            {t('hero.ctaAbout')}
           </a>
           <a href="#projects" className="btn btn--primary">
-            View Projects
+            {t('hero.ctaProjects')}
           </a>
           <a href="#contact" className="btn btn--outline">
-            Get in Touch
+            {t('hero.ctaContact')}
           </a>
         </div>
         <div className="hero__scroll-hint" aria-hidden="true">

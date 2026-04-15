@@ -28,7 +28,7 @@ Might change in the future
 
 ## Getting Started
 
-**Prerequisites:** Node.js 18 or later and npm.
+**Prerequisites:** Node.js 20.19 or later, or Node.js 22.12 or later, and npm.
 
 ```bash
 # Install dependencies
@@ -56,43 +56,43 @@ npm run dev
 ```
 Portfolio/
 ├── public/
-│   └── favicon.png
+│   ├── favicon.png
+│   └── CV_Julian_Machet.pdf
 ├── src/
 │   ├── components/
-│   │   ├── Navbar/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── Navbar.css
-│   │   ├── Hero/
-│   │   │   ├── Hero.jsx
-│   │   │   └── Hero.css
 │   │   ├── About/
 │   │   │   ├── About.jsx
 │   │   │   └── About.css
-│   │   ├── Skills/
-│   │   │   ├── Skills.jsx
-│   │   │   ├── Skills.css
-│   │   │   ├── SkillBar.jsx
-│   │   │   └── SkillBar.css
+│   │   ├── Contact/
+│   │   │   ├── Contact.jsx
+│   │   │   └── Contact.css
+│   │   ├── Footer/
+│   │   │   ├── Footer.jsx
+│   │   │   └── Footer.css
+│   │   ├── Hero/
+│   │   │   ├── Hero.jsx
+│   │   │   └── Hero.css
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Navbar.css
 │   │   ├── Projects/
 │   │   │   ├── Projects.jsx
 │   │   │   ├── Projects.css
 │   │   │   ├── ProjectCard.jsx
 │   │   │   └── ProjectCard.css
-│   │   ├── Contact/
-│   │   │   ├── Contact.jsx
-│   │   │   └── Contact.css
-│   │   └── Footer/
-│   │       ├── Footer.jsx
-│   │       └── Footer.css
+│   │   └── Skills/
+│   │       ├── Skills.jsx
+│   │       ├── Skills.css
+│   │       ├── SkillBar.jsx
+│   │       └── SkillBar.css
 │   ├── data/
-│   │   ├── projects.js
-│   │   └── skills.js
 │   ├── hooks/
 │   │   └── useActiveSection.js
 │   ├── styles/
 │   │   ├── global.css
 │   │   └── variables.css
 │   ├── App.jsx
+│   ├── i18n.js
 │   └── main.jsx
 ├── index.html
 ├── vite.config.js
@@ -144,12 +144,7 @@ Global stylesheets that are not scoped to a single component.
 
 #### `src/data/`
 
-Plain JavaScript modules that export static data arrays. Keeping content separate from components makes it easy to update information without touching presentation logic.
-
-| File | Purpose |
-|------|---------|
-| `src/data/projects.js` | Array of project objects. Each object has `id`, `title`, `description`, `tags`, `liveUrl`, `repoUrl`, and `featured`. Add, remove, or edit entries here to update the Projects section. |
-| `src/data/skills.js` | Array of skill-group objects. Each group has a `category` string and an `items` array of `{ name, level }` objects, where `level` is a percentage (0–100). |
+Plain JavaScript modules that export static data arrays. Keeping content separate from components makes it easy to update information without touching presentation logic. Data is now sourced from `i18n.js` for translated content, so this directory is currently not used.
 
 ---
 
@@ -182,7 +177,7 @@ Each component lives in its own folder alongside its scoped CSS file.
 
 | File | Purpose |
 |------|---------|
-| `Hero.jsx` | Full-viewport landing section. Displays a greeting, the owner's name and job title, a short tagline, and two call-to-action buttons linking to the Projects and Contact sections. Also renders an animated scroll indicator at the bottom. |
+| `Hero.jsx` | Full-viewport landing section. Displays a greeting, the owner's name and job title, a short tagline, and three call-to-action buttons linking to the About Me, Projects and Contact sections. Also renders an animated scroll indicator at the bottom. |
 | `Hero.css` | Styles for the hero layout, `clamp()`-based responsive font sizes, the `.btn` and `.btn--primary` / `.btn--outline` shared button variants, and the bounce animation for the scroll indicator. |
 
 ---
@@ -239,6 +234,11 @@ Each component lives in its own folder alongside its scoped CSS file.
 ### `src/App.jsx`
 
 Root component that imports the global stylesheet and composes all sections in order: `Navbar`, `Hero`, `About`, `Skills`, `Projects`, `Contact`, `Footer`. This is the single file to edit when adding, removing, or reordering sections.
+
+### `src/i18n.js`
+
+Internationalisation setup using `i18next` and `react-i18next`. Contains translation resources for English and French. The `useTranslation` hook is used in components to access translated strings. The language toggle button in the Navbar switches between English and French. To add more languages, extend the `resources` object with new language keys and their respective translations.
+This file is also where all the datas of skills and projects are now stored, as they need translations. 
 
 ### `src/main.jsx`
 

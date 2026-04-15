@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import useActiveSection from '../../hooks/useActiveSection';
 import './Navbar.css';
 
 const NAV_LINKS = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { key: 'home', href: '#home' },
+  { key: 'about', href: '#about' },
+  { key: 'skills', href: '#skills' },
+  { key: 'projects', href: '#projects' },
+  { key: 'contact', href: '#contact' },
 ];
 
 const SECTION_IDS = ['home', 'about', 'skills', 'projects', 'contact'];
@@ -17,6 +18,7 @@ const SECTION_IDS = ['home', 'about', 'skills', 'projects', 'contact'];
  * and a responsive hamburger menu for narrow screens.
  */
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const activeId = useActiveSection(SECTION_IDS);
@@ -28,17 +30,21 @@ const Navbar = () => {
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === 'fr' ? 'en' : 'fr');
+    closeMenu();
+  };
 
   return (
     <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
         <a href="#home" className="navbar__logo" onClick={closeMenu}>
-          Portfolio
+          {t('navbar.logo')}
         </a>
 
         <nav className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`} aria-label="Main navigation">
           <ul className="navbar__list">
-            {NAV_LINKS.map(({ label, href }) => {
+            {NAV_LINKS.map(({ key, href }) => {
               const id = href.replace('#', '');
               return (
                 <li key={id}>
@@ -47,7 +53,7 @@ const Navbar = () => {
                     className={`navbar__link${activeId === id ? ' navbar__link--active' : ''}`}
                     onClick={closeMenu}
                   >
-                    {label}
+                    {t(`navbar.links.${key}`)}
                   </a>
                 </li>
               );
@@ -56,8 +62,18 @@ const Navbar = () => {
         </nav>
 
         <button
+          type="button"
+          className="navbar__lang-btn"
+          aria-label={i18n.language === 'fr' ? 'Switch language to English' : 'Switch language to French'}
+          title={i18n.language === 'fr' ? 'Switch language to English' : 'Switch language to French'}
+          onClick={toggleLanguage}
+        >
+          {i18n.language === 'fr' ? 'FR' : 'EN'}
+        </button>
+
+        <button
           className={`navbar__hamburger${menuOpen ? ' navbar__hamburger--open' : ''}`}
-          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-label={menuOpen ? t('navbar.closeMenu') : t('navbar.openMenu')}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((prev) => !prev)}
         >
