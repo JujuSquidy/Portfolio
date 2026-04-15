@@ -114,7 +114,7 @@ const resources = {
             id: 2,
             title: 'Tableau de bord de supervision',
             description:
-              'Application web Symfony qui récupère des informations depuis une API recevant des données de salles (température, humidite, qualité de l\'air) et les affiche avec des graphiques et un code couleur par salle pour un suivi éco-responsable des salles de l\'établissement. Les données proviennent de microcontroleurs ESP32 et sont envoyées à l\'API via des requêtes curl.',
+              'Application web Symfony qui récupère des informations depuis une API recevant des données de salles (température, humidite, qualité de l\'air) et les affiche avec des graphiques et un code couleur par salle pour un suivi éco-responsable des salles de l\'établissement. Les données proviennent de microcontroleurs ESP32 et sont envoyées à l\'API via des requêtes curl. Le code de l\'ESP32 a été écrit par l\'équipe et son repository est disponible dans le README du projet Symfony.',
             tags: ['Symfony (PHP)', 'C++', 'JavaScript', 'Twig', 'Teamwork', 'Testing'],
             liveUrl: null,
             repoUrl: '#',
@@ -143,6 +143,28 @@ const resources = {
             featured: false,
             category: 'schoolProfessional',
           },
+          { 
+            id: 5,
+            title: 'Borne d\'arcade',
+            description:
+              'Borne d\'arcade personnalisée construite à partir de zéro, avec un Raspberry Pi 3 comme cerveau, un écran de récupération, des contrôleurs type borne d\'arcade classique, et l\'émulateur Recalbox pour l\'interface. La borne est capable d\'émuler une large gamme de consoles rétro et de jeux d\'arcade, offrant une expérience de jeu authentique et personnalisable.',
+            tags: ['Raspberry Pi', 'Recalbox', 'Retro Gaming', 'Hardware', 'DIY'],
+            liveUrl: null,
+            repoUrl: null,
+            featured: true,
+            category: 'personal',
+          },
+          {
+            id: 6,
+            title: 'Serveur NAS local',
+            description:
+              'Serveur NAS local pour la famille construit avec un Raspberry Pi 3, utilisant OpenMediaVault pour la gestion du stockage et des utilisateurs. Le serveur offre une solution de stockage centralisée pour les fichiers personnels et les sauvegardes à travers le réseau domestique, avec une attention particulière portée à la sécurité et à la confidentialité des données de chacun. Projet encore en cours de mise en place.',
+            tags: ['Raspberry Pi', 'OpenMediaVault', 'NAS', 'Storage Solutions', 'DIY'],
+            liveUrl: null,
+            repoUrl: null,
+            featured: false,
+            category: 'personal',
+          }
         ],
       },
       contact: {
@@ -209,7 +231,7 @@ const resources = {
         titleHighlight: 'Me',
         subtitle: 'A bit of background',
         p1:
-          'A French junior software developer with a passion for building things and helping others. From designing user interfaces to architecting back-end services, the goal is always the same: write code that is easy to read and easy to maintain.',
+          'A French junior software developer with a passion for building things and helping others. From designing user interfaces to architecting back-end services, the goal is always the same: write code that is easy to read, easy to maintain and usable for everyone.',
         p2:
           'When not writing code, time is spent exploring new technologies, playing video games, learning new things, and tinkering with side projects that may or may not ever see the light of day.',
         p3:
@@ -280,21 +302,21 @@ const resources = {
         items: [
           {
             id: 1,
-            title: 'Monitoring Dashboard',
-            description:
-              'A web application made with Symfony that gathers information from an API that receives data about rooms (temperature, humidity, air quality) and displays them in a dashboard with room-based charts for eco-friendly monitoring of the building. Data are gathered by ESP32 microcontrollers with connected sensors and sent to the API with curl requests.',
-            tags: ['Symfony (PHP)', 'C++', 'JavaScript', 'Twig', 'Teamwork', 'Testing'],
-            liveUrl: null,
-            repoUrl: '#',
-            featured: false,
-            category: 'schoolProfessional',
-          },
-          {
-            id: 2,
             title: 'Mobile web app',
             description:
               'A mobile web application for users of the previous project: account creation, latest room data visualization, notifications when a room has issues, and guidance on how to fix them (open the window, turn off the heater, etc.). A weekly leaderboard was also implemented. Built with React, a Symfony API using API Platform, and GitLab CI/CD with linting, php-cs-fixer, SonarQube, and PHP/JS test pipelines.',
             tags: ['React', 'CI/CD', 'Git', 'Docker', 'SonarQube', 'C++', 'REST API', 'Symfony (PHP)', 'Testing', 'Teamwork', 'Playwright'],
+            liveUrl: null,
+            repoUrl: '#',
+            featured: true,
+            category: 'schoolProfessional',
+          },
+          {
+            id: 2,
+            title: 'Monitoring Dashboard',
+            description:
+              'A web application made with Symfony that gathers information from an API that receives data about rooms (temperature, humidity, air quality) and displays them in a dashboard with room-based charts for eco-friendly monitoring of the building. Data are gathered by ESP32 microcontrollers with connected sensors and sent to the API with curl requests.',
+            tags: ['Symfony (PHP)', 'C++', 'JavaScript', 'Twig', 'Teamwork', 'Testing'],
             liveUrl: null,
             repoUrl: '#',
             featured: false,
@@ -307,7 +329,7 @@ const resources = {
                 'The very website you are currently browsing! Built with React and Vite, with an architecture designed for maintainability and scalability. The design is clean and simple to let the content shine, with particular attention to accessibility, performance, and privacy when linking to external sites.',
             tags: ['React', 'Vite', 'JavaScript', 'i18n', 'Responsive Design', 'Accessibility'],
             liveUrl: 'https://portfolio-julian-machet.netlify.app/',
-            repoUrl: '#',
+            repoUrl: 'https://github.com/JujuSquidy/Portfolio',
             featured: true,
             category: 'personal',
           },
@@ -319,6 +341,28 @@ const resources = {
             tags: ['C++', 'Qt', 'Git', 'Game Development', 'Teamwork', 'Testing'],
             liveUrl: null,
             repoUrl: '#',
+            featured: false,
+            category: 'schoolProfessional',
+          },
+          {
+            id: 5,
+            title: 'Custom arcade',
+            description:
+              'A custom arcade cabinet built from scratch, with a Raspberry Pi 3 as its brain, a salvaged monitor, classic arcade-style controllers, and the Recalbox emulator for the interface. The cabinet is capable of emulating a wide range of retro consoles and arcade games, offering an authentic and customizable gaming experience.',
+            tags: ['Raspberry Pi', 'Woodworking', 'Electronics', 'Recalbox', 'Retro Gaming', 'DIY'],
+            liveUrl: null,
+            repoUrl: null,
+            featured: true,
+            category: 'personal',
+          },
+          {
+            id: 6,
+            title: 'Local NAS server',
+            description:
+                'A local NAS server for the family built with a Raspberry Pi 3, using OpenMediaVault for storage and user management. The server provides a centralized storage solution for personal files and backups across the home network, with a focus on security and privacy for everyone\'s data. Project still in progress.',
+            tags: ['Raspberry Pi', 'OpenMediaVault', 'Storage', 'Network', 'DIY', 'Electronics'],
+            liveUrl: null,
+            repoUrl: null,
             featured: false,
             category: 'personal',
           },
