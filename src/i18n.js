@@ -32,7 +32,7 @@ const resources = {
         p1:
           'Developpeur logiciel junior francais passionné par la création et l\'entraide. Du design d\'interfaces à l\'architecture de services back-end, l\'objectif reste le même : écrire un code lisible, maintenable et utilisable par tous.',
         p2:
-          'Quand je ne code pas, je passe du temps a m\'informer sur les nouvelles technologies, jouer aux jeux video, apprendre de nouvelles choses et bricoler des projets personnels.',
+          'Dans mon temps libre, je passe du temps a m\'informer sur les nouvelles technologies, jouer aux jeux video, apprendre de nouvelles choses et bricoler mes projets personnels.',
         p3:
           'Ce portfolio est un document vivant : projets, compétences et expériences évolueront ici au fil du temps.',
         details: {
@@ -178,7 +178,7 @@ const resources = {
         github: 'GitHub',
         linkedin: 'LinkedIn',
         disclaimer:
-          'Ce formulaire est en cours de construction et n\'envoie pas encore de vrais messages. Merci d\'utiliser les coordonnées ci-contre pour me contacter directement.',
+          'Ce formulaire est en cours de développement et n\'envoie pas encore de vrais messages. Merci d\'utiliser les coordonnées ci-contre pour me contacter directement.',
         name: 'Nom',
         namePlaceholder: 'Votre nom',
         emailPlaceholder: 'votre@email.com',
@@ -187,7 +187,7 @@ const resources = {
         sending: 'Envoi...',
         send: 'Envoyer le message',
         success: 'Message envoyé ! Je reviendrais vers vous dès que possible.',
-        error: 'Le formulaire est en cours de construction. Merci de réessayer ou de m\'écrire directement par email.',
+        error: 'Le formulaire est en cours de développement. Merci de réessayer ou de m\'écrire directement par email.',
       },
       footer: {
         logo: 'Portfolio',
