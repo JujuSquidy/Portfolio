@@ -18,7 +18,7 @@ const resources = {
       },
       hero: {
         greeting: 'Bonjour, je suis',
-        title: 'Developpeur Full-Stack',
+        title: 'Développeur Full-Stack',
         description:
           'Je crée des applications web propres et performantes, avec un focus sur l\'expérience utilisateur, la confidentialité et le code maintenable.',
         ctaAbout: 'À propos de moi',
