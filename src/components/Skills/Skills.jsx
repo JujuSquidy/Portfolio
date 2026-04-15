@@ -7,7 +7,7 @@ import './Skills.css';
  * defined in translations.
  */
 const Skills = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const skillsData = t('skills.groups', { returnObjects: true });
 
   return (
@@ -20,11 +20,11 @@ const Skills = () => {
 
         <div className="skills__grid">
           {skillsData.map(({ category, items }) => (
-            <div key={category} className="skills__group">
+            <div key={`${category}-${i18n.language}`} className="skills__group">
               <h3 className="skills__group-title">{category}</h3>
               <div className="skills__bars">
                 {items.map(({ name, level }) => (
-                  <SkillBar key={name} name={name} level={level} />
+                  <SkillBar key={`${name}-${i18n.language}`} name={name} level={level} />
                 ))}
               </div>
             </div>
@@ -36,3 +36,4 @@ const Skills = () => {
 }
 
 export default Skills;
+
