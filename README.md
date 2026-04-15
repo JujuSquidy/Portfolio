@@ -139,7 +139,7 @@ Global stylesheets that are not scoped to a single component.
 
 #### `src/data/`
 
-Plain JavaScript modules that export static data arrays. Keeping content separate from components makes it easy to update information without touching presentation logic. Datas are now in i18n.js as the datas need translations so this is not used anymore, might be later.
+Plain JavaScript modules that export static data arrays. Keeping content separate from components makes it easy to update information without touching presentation logic. Data is now sourced from `i18n.js` for translated content, so this directory is currently not used.
 
 ---
 
