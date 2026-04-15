@@ -132,8 +132,11 @@
   }
 
   .navbar__nav {
-    position: fixed;
-    inset: var(--navbar-height) 0 0 0;
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
     background-color: var(--color-background);
     display: flex;
     align-items: center;
