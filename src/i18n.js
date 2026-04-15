@@ -186,7 +186,7 @@ const resources = {
         messagePlaceholder: 'Parlez-moi de votre projet...',
         sending: 'Envoi...',
         send: 'Envoyer le message',
-        success: 'Message envoyé ! Je reviendrais vers vous dès que possible.',
+        success: 'Message envoyé ! Je reviendrai vers vous dès que possible.',
         error: 'Le formulaire est en cours de développement. Merci de réessayer ou de m\'écrire directement par email.',
       },
       footer: {
