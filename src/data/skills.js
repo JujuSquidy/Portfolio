@@ -9,19 +9,19 @@ const skills = [
     items: [
       { name: 'React', level: 90 },
       { name: 'JavaScript', level: 90 },
-      { name: 'TypeScript', level: 70 },
       { name: 'HTML & CSS', level: 80 },
       { name: 'Vite', level: 80 },
+      { name: 'TypeScript', level: 70 },
     ],
   },
   {
     category: 'Backend',
     items: [
+      { name: 'Symfony (PHP)', level: 90 },
+      { name: 'REST APIs', level: 85 },
       { name: 'Node.js', level: 80 },
       { name: 'C++', level: 80 },
       { name: 'Python', level: 75 },
-      { name: 'REST APIs', level: 85 },
-      { name: 'Symfony (PHP)', level: 90 },
     ],
   },
   {
