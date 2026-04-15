@@ -9,7 +9,7 @@ const resources = {
         links: {
           home: 'Accueil',
           about: 'À propos',
-          skills: 'Competences',
+          skills: 'Compétences',
           projects: 'Projets',
           contact: 'Contact',
         },
@@ -18,7 +18,7 @@ const resources = {
       },
       hero: {
         greeting: 'Bonjour, je suis',
-        title: 'Developpeur Full-Stack',
+        title: 'Développeur Full-Stack',
         description:
           'Je crée des applications web propres et performantes, avec un focus sur l\'expérience utilisateur, la confidentialité et le code maintenable.',
         ctaAbout: 'À propos de moi',
@@ -30,7 +30,7 @@ const resources = {
         titleHighlight: 'de moi',
         subtitle: 'Un peu de contexte',
         p1:
-          'Developpeur logiciel junior francais passionné par la création et l\'entraide. Du design d\'interfaces à l\'architecture de services back-end, l\'objectif reste le même : écrire un code lisible, maintenable et utilisable par tous.',
+          'Developpeur logiciel junior français passionné par la création et l\'entraide. Du design d\'interfaces à l\'architecture de services back-end, l\'objectif reste le même : écrire un code lisible, maintenable et utilisable par tous.',
         p2:
           'Dans mon temps libre, je passe du temps a m\'informer sur les nouvelles technologies, jouer aux jeux video, apprendre de nouvelles choses et bricoler mes projets personnels.',
         p3:
@@ -86,7 +86,7 @@ const resources = {
       projects: {
         titleBefore: 'Mes',
         titleHighlight: 'projets',
-        subtitle: 'Une selection de mes travaux professionnels et personnels',
+        subtitle: 'Une sélection de mes travaux professionnels et personnels',
         filterAria: 'Filtrer par catégorie de projet',
         filters: {
           schoolProfessional: 'Scolaires & Professionnels',
@@ -170,7 +170,7 @@ const resources = {
       contact: {
         titleBefore: 'Me',
         titleHighlight: 'contacter',
-        subtitle: 'Une question, une idee de projet, ou juste envie de dire bonjour ?',
+        subtitle: 'Une question, une idée de projet, ou juste envie de dire bonjour ?',
         workTogether: 'Travaillons ensemble',
         workTogetherText:
           'Que ce soit pour une mission freelance, un poste a temps plein ou un projet collaboratif, ma boite mail est toujours ouverte.',
@@ -186,7 +186,7 @@ const resources = {
         messagePlaceholder: 'Parlez-moi de votre projet...',
         sending: 'Envoi...',
         send: 'Envoyer le message',
-        success: 'Message envoyé ! Je reviendrais vers vous dès que possible.',
+        success: 'Message envoyé ! Je reviendrai vers vous dès que possible.',
         error: 'Le formulaire est en cours de développement. Merci de réessayer ou de m\'écrire directement par email.',
       },
       footer: {

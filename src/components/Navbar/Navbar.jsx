@@ -61,7 +61,13 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <button className="navbar__lang-btn" onClick={toggleLanguage}>
+        <button
+          type="button"
+          className="navbar__lang-btn"
+          aria-label={i18n.language === 'fr' ? 'Switch language to English' : 'Switch language to French'}
+          title={i18n.language === 'fr' ? 'Switch language to English' : 'Switch language to French'}
+          onClick={toggleLanguage}
+        >
           {i18n.language === 'fr' ? 'FR' : 'EN'}
         </button>
 
