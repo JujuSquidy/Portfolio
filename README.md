@@ -23,7 +23,7 @@ A personal portfolio website built with **React** and **Vite**. The project is s
 
 ## Getting Started
 
-**Prerequisites:** Node.js 22 or later and npm.
+**Prerequisites:** Node.js 20.19 or later, or Node.js 22.12 or later, and npm.
 
 ```bash
 # Install dependencies
